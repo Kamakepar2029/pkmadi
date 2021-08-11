@@ -1,0 +1,219 @@
+/*
+ *
+ * Default stylesheet for HTML_QuickForm2 forms.
+ *
+ * Based on stylesheet from HTML_QuickForm_Renderer_Tableless package
+ * by Mark Wiesemann <wiesemann at php dot net>
+ *
+ * $Id: quickform.css 326347 2012-06-26 14:12:11Z avb $
+ *
+ */
+
+#submit_4, #submit_7, #submit_8, #submit_9 {
+    padding: 10px 25px;
+    border: 0;
+    background-color: transparent;
+    color: #034f83;
+    font-weight: 700;
+    font-size: 14px;
+    border: 2px solid #034f83;
+    cursor: pointer;
+}
+#submit_4:hover, #submit_7:hover, #submit_8:hover, #submit_9:hover {
+     background-color: #034f83;
+    color:#fff;
+      
+}
+
+.element input[type="checkbox"] {
+    width: 20px;
+    height: 20px;
+    background: #f4f4f4;
+    border-radius: 5px;
+    border: 1px solid #ced4da;
+    top: 4px;
+    left: -10px;
+    position: relative;
+    margin-top: -6px;
+}
+.group > input+label {
+ width:100%;   
+}
+.group > label {
+    padding-left: 10px;
+}
+.group > input {
+    margin-left: 20px;
+}
+.quickform select {
+width: 395px;
+    max-width: 100%;
+    height: 39px;
+    max-height: 100%;
+    background-color: #f9f9f9;
+    display: block;
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #495057;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    border-radius: .25rem;
+    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+ .quickform form {
+    margin: 0;
+    padding: 0;
+	margin-top:5px;
+}
+.quickform fieldset {
+	float:left;
+    border: #fff;
+    margin: 0.2em 0 0 0;
+    padding: 0.5em;
+	width:400px;
+}
+.quickform fieldset legend {
+    white-space: nowrap;
+    font-weight: bold;
+    background-color: #CCCCCC;
+    padding: 0.1em 0.5em;
+    display: block;
+    margin: 0;
+}
+.quickform label {
+/*    margin: 0 0 0 0.5em;*/
+}
+.quickform p.label {
+padding: 0px;
+    margin: 0.7em 0px 0px 19px;
+    position: relative;
+}
+.quickform input[type="text"] {
+width: 370px;
+    max-width: 100%;
+    height: 25px;
+    max-height: 100%;
+    background-color: #f9f9f9;
+    display: block;
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #495057;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    border-radius: .25rem;
+    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+
+.quickform input#captcha_code_4 {
+       width: 160px;
+    max-width:100%;
+}
+.quickform  #feedback_4 textarea{  
+min-width: 670px;
+    max-width: 500px;
+    width: 100%;
+    padding: 5px 10px;
+    max-height: 120px;
+    min-height: 120px;
+    border-radius: 5px;
+    border: 2px solid #dcdcdc;
+    background-color: #eee;
+}
+.quickform  #feedback_8 textarea{  
+    max-width: 365px;
+    width: 100%;
+    padding: 5px 10px;
+    max-height: 120px;
+    min-height: 120px;
+    border-radius: 5px;
+    border: 2px solid #dcdcdc;
+    background-color: #eee;
+}
+.quickform {
+ position: relative;   
+}
+
+.quickform #feedback_9 > div> div.row:nth-child(9) {
+      float: right;
+    position: absolute;
+    top: 0;
+    right: 0;  
+}
+
+
+.quickform #feedback_4 div.row:nth-child(7) {
+    float: right;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.quickform #feedback_4 div.row:nth-child(10) {
+float: right;
+    position: absolute;
+ top: 190px;
+    right: 510px;
+    width:200px;
+}
+.quickform #feedback_4 div.row:nth-child(9) {
+float: right;
+    position: absolute;
+    top: 180px;
+    right: 260px;
+
+}
+ .quickform select {}
+.quickform textarea#vquestion_4 {
+    overflow: auto;
+}
+.quickform br {
+    clear: left;
+}
+.quickform div.row {
+    padding: 0;
+    margin: 0;
+display: flex;
+    flex-direction: column;
+}
+.quickform div.element {
+margin: 8px 0px 11px 1em;
+    padding: 0px;
+}
+.quickform div.reqnote {
+font-size: 80%;
+
+}
+
+.quickform div.errors {
+	color:red;
+	font-size:10px;
+	margin-bottom:20px;
+}
+.quickform span.required/*, .quickform div.reqnote em */{
+    color: red;
+
+}
+.quickform .label > span.required/*, .quickform div.reqnote em */{
+    color: red;
+    position: absolute;
+    left: -12px;
+}
+.quickform span.error
+{
+	color: red;
+
+}
+.quickform div.error {
+/*     border: 1px solid red;
+    padding: 0.5em; */
+	font-size: 11px;
+	margin: 0 0 3px 1em;
+}
+
+.quickform .repeatPrototype {
+    display: none;
+}
